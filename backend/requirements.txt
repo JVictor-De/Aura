@@ -1,0 +1,46 @@
+# Zoe Backend - Python Dependencies
+# Referência: ARCHITECTURE.md §Tech Stack
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Database
+sqlalchemy[asyncio]==2.0.25
+asyncpg==0.29.0
+alembic==1.13.1
+
+# PostGIS (geo queries)
+geoalchemy2==0.14.3
+
+# Redis
+redis[hiredis]==5.0.1
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+
+# Validation & Settings
+pydantic==2.5.3
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# WebSocket
+websockets==12.0
+
+# HTTP Client
+httpx==0.26.0
+
+# Resiliência
+tenacity==8.2.3
+circuitbreaker==2.0.0
+
+# Push Notifications (MVP: stub, Firebase opcional)
+firebase-admin==6.3.0
+
+# Rate Limiting
+slowapi==0.1.9
+
+# Utils
+python-multipart==0.0.6
